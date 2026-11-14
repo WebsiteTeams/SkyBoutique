@@ -1,0 +1,44 @@
+{
+  "name": "sky-boutique",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "db": "node scripts/dev-db.mjs",
+    "seed": "tsx --env-file=.env.local scripts/seed.ts",
+    "seed:reset": "tsx --env-file=.env.local scripts/seed.ts --reset",
+    "assets": "node scripts/generate-luxury-assets.mjs",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^7.0.5",
+    "bcryptjs": "^3.0.3",
+    "clsx": "^2.1.1",
+    "framer-motion": "^14.12.0",
+    "jose": "^6.2.17",
+    "lucide-react": "^1.71.0",
+    "mongoose": "^9.12.1",
+    "next": "16.4.6",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "react-hook-form": "^7.91.0",
+    "recharts": "^3.10.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@tailwindcss/turbopack": "4.3.3",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.4.6",
+    "mongodb-memory-server": "^11.3.0",
+    "tailwindcss": "4.3.3",
+    "tsx": "^4.23.15",
+    "typescript": "^5"
+  }
+}
